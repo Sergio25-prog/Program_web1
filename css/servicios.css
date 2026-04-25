@@ -1,0 +1,27 @@
+/* =========================================
+   Archivo: servicios.css
+   Objetivo: Formato visual de listas de definición
+   ========================================= */
+
+#servicios-clientes dl {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 800px;
+}
+
+#servicios-clientes dt {
+    font-weight: bold;
+    color: #e74c3c;
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+
+#servicios-clientes dd {
+    margin-left: 20px;
+    padding-left: 15px;
+    border-left: 3px solid #e74c3c;
+    color: #444444;
+    margin-bottom: 20px;
+}

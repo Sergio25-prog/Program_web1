@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infografía CSS3 - Chrome</title>
+    <style>
+        /* =========================================
+           Estilos de la Infografía
+           ========================================= */
+        body {
+            background-color: #e9ecef;
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .infografia-contenedor {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ffffff;
+            max-width: 800px;
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .info-cabecera {
+            background-color: #2c3e50;
+            color: #ffffff;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .info-cabecera h1 {
+            margin: 0 0 10px 0;
+            font-size: 28px;
+        }
+
+        .info-cabecera p {
+            margin: 0;
+            font-size: 16px;
+            color: #bdc3c7;
+        }
+
+        .info-cuerpo {
+            padding: 40px 30px;
+        }
+
+        /* Diseño de Tarjetas (Cards) para los datos */
+        .tarjeta {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px 25px;
+            margin-bottom: 25px;
+            position: relative;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .tarjeta:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Colores dinámicos para los bordes izquierdos */
+        .tarjeta-1 { border-left: 6px solid #e74c3c; } /* Rojo */
+        .tarjeta-2 { border-left: 6px solid #f1c40f; } /* Amarillo */
+        .tarjeta-3 { border-left: 6px solid #2ecc71; } /* Verde */
+        .tarjeta-4 { border-left: 6px solid #3498db; } /* Azul */
+
+        .tarjeta h2 {
+            margin-top: 0;
+            font-size: 20px;
+            color: #333333;
+        }
+
+        .tarjeta-1 h2 { color: #e74c3c; }
+        .tarjeta-2 h2 { color: #d4ac0d; }
+        .tarjeta-3 h2 { color: #27ae60; }
+        .tarjeta-4 h2 { color: #2980b9; }
+
+        .tarjeta p {
+            color: #555555;
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+
+        .destacado {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="infografia-contenedor">
+        <div class="info-cabecera">
+            <h1>Google Chrome: Estándar en CSS3</h1>
+            <p>Por qué presenta la mayor compatibilidad visual en desarrollo web</p>
+        </div>
+
+        <div class="info-cuerpo">
+            <div class="tarjeta tarjeta-1">
+                <h2>1. Motor de Renderizado (Blink)</h2>
+                <p>Desarrollado bajo el proyecto Chromium, el motor <span class="destacado">Blink</span> permite una interpretación extremadamente rápida y fluida del Modelo de Caja (Box Model), animaciones y transformaciones 2D/3D sin saturar la memoria del equipo.</p>
+            </div>
+
+            <div class="tarjeta tarjeta-2">
+                <h2>2. Adopción Temprana de Estándares W3C</h2>
+                <p>Chrome es pionero en implementar las recomendaciones oficiales del <span class="destacado">World Wide Web Consortium (W3C)</span>. Ofrece soporte nativo y estable para módulos modernos fundamentales como CSS Grid Layout y Flexbox.</p>
+            </div>
+
+            <div class="tarjeta tarjeta-3">
+                <h2>3. Herramientas para Desarrolladores (DevTools)</h2>
+                <p>Sus herramientas integradas (accesibles con F12) son el estándar de la industria. Permiten <span class="destacado">inspeccionar el código CSS en tiempo real</span>, modificar atributos sobre la marcha y visualizar la estructura de márgenes y rellenos visualmente.</p>
+            </div>
+
+            <div class="tarjeta tarjeta-4">
+                <h2>4. Historial de Prefijos Seguros</h2>
+                <p>Mediante el uso histórico del prefijo <span class="destacado">-webkit-</span>, Chrome lideró la experimentación de propiedades visuales avanzadas (gradientes, sombras, bordes redondeados), allanando el camino para que hoy se utilicen de forma estándar.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

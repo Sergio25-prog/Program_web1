@@ -1,0 +1,37 @@
+/* =========================================
+   Archivo: tablas.css
+   Objetivo: Formato visual tabular (Box Model)
+   ========================================= */
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Fundamental para el modelo visual de tablas */
+    margin: 25px 0;
+    font-family: sans-serif;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+}
+
+th {
+    background-color: #2980b9;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+/* Pseudo-clase para mejorar la lectura de filas */
+tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+/* Interacción del usuario */
+tr:hover {
+    background-color: #f5b041;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
