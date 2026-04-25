@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Prevención de Colisiones - Tienda de Tecnología</title>
+    
+    <style>
+        /* Reset básico para la previsualización */
+        body {
+            font-family: Arial, sans-serif;
+            padding: 40px;
+            background-color: #f4f4f9;
+        }
+
+        /* Bloque: Encapsula todo el contexto */
+        .producto-destacado {
+            background-color: white;
+            border: 2px solid #e0e0e0;
+            padding: 1.5rem;
+            border-radius: 10px;
+            max-width: 300px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        /* Elemento: Solo tiene sentido dentro del bloque */
+        .producto-destacado__titulo {
+            font-family: 'Segoe UI', sans-serif;
+            color: #2c3e50;
+            margin-top: 0;
+            font-size: 1.4rem;
+        }
+
+        /* Modificador: Cambia la apariencia de un elemento */
+        .producto-destacado__precio--oferta {
+            color: #e74c3c;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+
+        .producto-destacado__precio--oferta span {
+            font-size: 0.85rem;
+            color: #7f8c8d;
+            text-decoration: line-through;
+            font-weight: normal;
+            display: block;
+            margin-top: 5px;
+        }
+
+        .producto-destacado__boton {
+            background-color: #2c3e50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-weight: bold;
+        }
+
+        .producto-destacado__boton:hover {
+            background-color: #1a252f;
+        }
+    </style>
+</head>
+<body>
+
+    <article class="producto-destacado">
+        <h3 class="producto-destacado__titulo">Smartphone Alpha G5</h3>
+        <p class="producto-destacado__precio producto-destacado__precio--oferta">
+            $599.990 <span>(Precio normal: $649.990)</span>
+        </p>
+        <button class="producto-destacado__boton">Añadir al carrito</button>
+    </article>
+
+</body>
+</html>

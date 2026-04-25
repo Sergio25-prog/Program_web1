@@ -4,43 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechStore - Catálogo y Ofertas</title>
-    <link rel="stylesheet" href="css/tablas.css" type="text/css">
+   
+    
     <style>
-        @import url('css/servicios.css');
-    </style>
+  /* --- REGLAS GLOBALES (Aprovechando la Herencia) --- */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #4a4a4a; /* Gris oscuro estándar para toda la tienda */
+    background-color: #ffffff;
+}
 
+/* Las etiquetas h1, h2, y p heredarán el font-family de body automáticamente */
+h2 {
+    font-weight: normal;
+}
 
- <style>
-    /* Estilos para la sección Quiénes Somos */
-    #quienes-somos {
-        background-color: #f4f7f6; /* Color de fondo suave */
-        padding: 30px;
-        margin: 20px 0;
-        border-radius: 10px;
-        border-left: 8px solid #2c3e50; /* Acento visual a la izquierda */
-    }
+/* --- EXCEPCIÓN: SECCIÓN "QUIÉNES SOMOS" (Aplicando la Cascada) --- */
+#quienes-somos {
+    background-color: #1a1a1a; /* Fondo oscuro específico */
+    /* Ruptura de herencia: Forzamos un nuevo color para este contenedor y sus hijos */
+    color: #f1f1f1; 
+}
 
-    /* Formato para los Encabezados (h1, h2) */
-    #quienes-somos h1, 
-    #quienes-somos h2 {
-        font-family: 'Helvetica', Arial, sans-serif;
-        color: #2c3e50;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        border-bottom: 2px solid #3498db;
-        display: inline-block; /* Para que la línea del borde solo cubra el texto */
-        padding-bottom: 5px;
-    }
+/* Aprovechando la especificidad de la cascada para sobreescribir la fuente global */
+#quienes-somos h2 {
+    font-family: 'Georgia', serif; /* Fuente distinta y elegante para esta sección */
+    color: #00d2ff; /* Color de acento tecnológico */
+    border-bottom: 1px solid #00d2ff;
+}
 
-    /* Formato para los Párrafos */
-    #quienes-somos p {
-        font-family: 'Georgia', serif;
-        font-size: 1.15rem;
-        line-height: 1.8; /* Espaciado entre líneas para mejor lectura */
-        color: #444444;
-        text-align: justify;
-        margin-top: 15px;
-    }
+#quienes-somos p {
+    line-height: 1.8; /* Mejora la legibilidad en fondos oscuros */
+}
+    
 </style>   
     
 
