@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore - Informe de Consultoría</title>
+    <style>
+        /* RESET Y CONFIGURACIÓN GLOBAL */
+        *, *::before, *::after {
+            box-sizing: border-box; /* Estándar W3C para control de cajas */
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f0f2f5;
+            color: #1a1a1b;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        /* 1. MODELO DE CAJAS: SECCIONES PRINCIPALES */
+        .header-store {
+            background-color: #1c2331;
+            color: #ffffff;
+            padding: 3rem 1rem;
+            text-align: center;
+            border-bottom: 6px solid #4b515d;
+            margin-bottom: 25px;
+        }
+
+        .main-container {
+            background-color: #ffffff;
+            max-width: 1100px;
+            margin: 0 auto; /* Centrado horizontal */
+            padding: 40px;
+            border: 1px solid #d1d5db;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .footer-store {
+            background-color: #2e3131;
+            color: #bdc3c7;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 30px;
+            border-top: 5px solid #1c2331;
+        }
+
+        /* 2. TIPOGRAFÍA Y TABLAS */
+        h1, h2, h3 {
+            color: #2c3e50;
+            margin-bottom: 1.2rem;
+        }
+
+        p { margin-bottom: 1rem; }
+
+        .service-list {
+            list-style: none;
+            padding-left: 0;
+            margin: 20px 0;
+        }
+
+        .service-list li {
+            background: #eef2f3;
+            margin-bottom: 8px;
+            padding: 12px;
+            border-left: 5px solid #3498db;
+            font-weight: 500;
+        }
+
+        .product-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0 40px 0;
+        }
+
+        .product-table th {
+            background-color: #34495e;
+            color: #ffffff;
+            padding: 15px;
+            text-align: left;
+        }
+
+        .product-table td {
+            padding: 12px 15px;
+            border: 1px solid #dee2e6;
+        }
+
+        .product-table tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+
+        .product-table tr:hover {
+            background-color: #e9ecef;
+        }
+
+        /* 3. POSICIONAMIENTO MULTIMEDIA */
+        .offers-grid {
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .offer-card {
+            position: relative; /* Contexto para el posicionamiento absoluto */
+            width: 300px;
+            background: #fff;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .offer-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .badge-discount {
+            position: absolute; /* Posicionamiento fuera del flujo */
+            top: -10px;
+            right: -10px;
+            background-color: #e74c3c;
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 50%;
+            font-weight: bold;
+            font-size: 0.9rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header-store">
+        <h1>TechStore: Innovación al Alcance</h1>
+    </header>
+
+    <main class="main-container">
+        <section id="servicios">
+            <h2>Nuestros Servicios</h2>
+            <p>Brindamos soluciones integrales para potenciar su infraestructura tecnológica:</p>
+            <ul class="service-list">
+                <li>Soporte Técnico 24/7 y Mantenimiento Proactivo.</li>
+                <li>Consultoría en Ciberseguridad y Redes.</li>
+                <li>Garantía Extendida en todos los productos oficiales.</li>
+            </ul>
+        </section>
+
+        <section id="catalogo">
+            <h2>Catálogo de Productos</h2>
+            
+            <h3>Celulares y Dispositivos Móviles</h3>
+            <table class="product-table">
+                <thead>
+                    <tr><th>Modelo</th><th>Almacenamiento</th><th>Precio</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>UltraPhone 15</td><td>256GB</td><td>$890.000</td></tr>
+                    <tr><td>Z-Fold Tech</td><td>512GB</td><td>$1.200.000</td></tr>
+                </tbody>
+            </table>
+
+            <h3>Laptops y Estaciones de Trabajo</h3>
+            <table class="product-table">
+                <thead>
+                    <tr><th>Equipo</th><th>Procesador</th><th>Precio</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>WorkStation Pro</td><td>Intel i9</td><td>$1.500.000</td></tr>
+                    <tr><td>AirBook Ultra</td><td>M3 Chip</td><td>$1.350.000</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="ofertas">
+            <h2>Ofertas de la Semana</h2>
+            <div class="offers-grid">
+                <article class="offer-card">
+                    <div class="badge-discount">-25%</div>
+                    <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400" alt="Laptop">
+                    <h3>MacBook Air</h3>
+                </article>
+                <article class="offer-card">
+                    <div class="badge-discount">-15%</div>
+                    <img src="https://images.unsplash.com/photo-1546054454-aa26e2b734c7?w=400" alt="Smartphone">
+                    <h3>Smartphone Alpha</h3>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-store">
+        <p>&copy; 2026 TechStore Chile. Desarrollado bajo estándares de Consultoría Web.</p>
+    </footer>
+
+</body>
+</html>
