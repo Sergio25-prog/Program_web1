@@ -1,0 +1,39 @@
+/* CONFIGURACIÓN MÓVIL (Mobile First) */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { padding: 15px; background-color: #f0f2f5; font-family: Arial, sans-serif; }
+
+.contenedor-principal {
+    display: grid;
+    grid-template-columns: 1fr; /* Una sola columna en celulares */
+    gap: 15px;
+}
+
+.caja {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 2px solid #333;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* CONFIGURACIÓN ESCRITORIO (Media Query) */
+@media screen and (min-width: 768px) {
+    .contenedor-principal {
+        grid-template-columns: repeat(3, 1fr); /* 3 columnas base */
+        grid-template-areas:
+            "area-q area-q area-q"
+            "area-c area-l area-co"
+            "area-s area-s area-o"
+            "area-v area-v area-f";
+    }
+
+    /* Vinculación de clases con áreas del Grid */
+    .quienes    { grid-area: area-q; }
+    .celulares  { grid-area: area-c; }
+    .laptops    { grid-area: area-l; }
+    .consolas   { grid-area: area-co; }
+    .servicios  { grid-area: area-s; }
+    .ofertas    { grid-area: area-o; }
+    .videos     { grid-area: area-v; }
+    .formulario { grid-area: area-f; }
+}
